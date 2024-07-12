@@ -4,3 +4,4 @@ dist/
 
 meta.json
 __main__.spec
+build.sh
