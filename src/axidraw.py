@@ -8,15 +8,14 @@ from pyaxidraw import axidraw
 
 
 
-
+from viam.components.gantry import Gantry
 from viam.module.types import Reconfigurable
 from viam.operations import run_with_operation
 from viam.proto.app.robot import ComponentConfig
-from viam.proto.common import ResourceName, Vector3
+from viam.proto.common import ResourceName
 from viam.resource.base import ResourceBase
 from viam.resource.types import Model, ModelFamily
 
-from gantry_python import Gantry
 from viam.logging import getLogger
 
 import time

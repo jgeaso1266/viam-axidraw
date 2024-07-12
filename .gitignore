@@ -1,7 +1,9 @@
 .venv/
 build/
 dist/
+viam-env/
+src/__pycache__
 
-meta.json
 __main__.spec
 build.sh
+.installed
