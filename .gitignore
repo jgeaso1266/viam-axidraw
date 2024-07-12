@@ -5,5 +5,4 @@ viam-env/
 src/__pycache__
 
 __main__.spec
-build.sh
 .installed
