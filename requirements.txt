@@ -1,0 +1,5 @@
+viam-sdk
+pyinstaller
+google-api-python-client
+
+axicli @ https://cdn.evilmadscientist.com/dl/ad/public/AxiDraw_API.zip
