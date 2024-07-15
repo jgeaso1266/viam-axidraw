@@ -1,12 +1,12 @@
 {
   "module_id": "jalen:axidraw",
-  "visibility": "private",
+  "visibility": "public",
   "url": "https://github.com/jgeaso1266/viam-axidraw",
   "description": "EBB driver board module for an Axidraw gantry produced by Evil Mad Scientist",
   "models": [
     {
       "api": "rdk:component:gantry",
-      "model": "jalen:viam-axidraw:axidraw"
+      "model": "jalen:jgeaso1266:axidraw"
     }
   ],
   "build": {
