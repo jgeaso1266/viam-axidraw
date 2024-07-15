@@ -6,7 +6,7 @@
   "models": [
     {
       "api": "rdk:component:gantry",
-      "model": "jalen:jgeaso1266:axidraw"
+      "model": "jalen:viam-axidraw:axidraw"
     }
   ],
   "build": {
