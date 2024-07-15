@@ -12,7 +12,7 @@
   "build": {
     "build": "./build.sh",
     "path" : "dist/archive.tar.gz",
-    "arch" : ["any"]
+    "arch" : ["darwin/any", "linux/any"]
   },
   "entrypoint": "./run.sh"
 }
