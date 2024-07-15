@@ -6,3 +6,4 @@ src/__pycache__
 
 __main__.spec
 .installed
+test.py

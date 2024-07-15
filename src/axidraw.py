@@ -24,7 +24,7 @@ import asyncio
 LOGGER = getLogger(__name__)
 
 MM_TO_INCHES = 0.0393 #TODO check the resolution of this gantry
-class axidraw(Gantry, Reconfigurable):
+class axidrawer(Gantry, Reconfigurable):
     
     """
     An AxiDraw Gantry component that connects to the controller via a usb connection and
@@ -38,7 +38,7 @@ class axidraw(Gantry, Reconfigurable):
         self.position = [0.0 ,0.0,0.0]
         self.is_stopped = True
         self.axi_draw = axidraw.AxiDraw()
-        # Initialize class from eggbot's axidraw package
+        # Initialize class from viam-axidraw's axidraw package
         self.axi_draw.interactive()       # Enter interactive context
         if not self.axi_draw.connect():   # Open serial port to AxiDraw;
             sys.exit()                  # Exit, if no connection.
@@ -46,7 +46,7 @@ class axidraw(Gantry, Reconfigurable):
     def __del__(self):
         self.axi_draw.disconnect()
 
-    MODEL: ClassVar[Model] = Model(ModelFamily("jalen", "eggbot"), "axidraw")
+    MODEL: ClassVar[Model] = Model(ModelFamily("jalen", "viam-axidraw"), "axidraw")
     
     # create any class parameters here, 'some_pin' is used as an example (change/add as needed)
     some_pin: int
