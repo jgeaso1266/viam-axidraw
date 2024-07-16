@@ -84,7 +84,7 @@ class axidrawer(Gantry, Reconfigurable):
 
         For more information, see `Gantry component <https://docs.viam.com/components/gantry/>`_.
         """
-        ...
+        return self.position
 
     
     async def move_to_position(
@@ -123,7 +123,7 @@ class axidrawer(Gantry, Reconfigurable):
         self.is_stopped = False
         self.position = positions
 
-        positions_inches = positions*MM_TO_INCHES
+        positions_inches = [i * MM_TO_INCHES for i in positions]
 
         if positions[2] > 0: # zero is the ground plane for the third axis - the servo
             #TODO: servo up/down through their position or an extra parameter as a bool
@@ -159,7 +159,7 @@ class axidrawer(Gantry, Reconfigurable):
 
         For more information, see `Gantry component <https://docs.viam.com/components/gantry/>`_.
         """
-        self.move_to_position([0,0,0])
+        await self.move_to_position([0, 0, 0], [50.0, 50.0, 50.0])
         return True
 
     
